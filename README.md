@@ -8,9 +8,8 @@
 ## 屏幕截图 (Screenshots)
 
 <p align="center">
-<img src="" width="216"></a>
-<img src="" width="216"></a>
-<img src="" width="216"></a>
+<img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/settings_0_1_44.png" width="216"></a>
+<img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/per_app_settings_0_1_44.png" width="216"></a>
 </p>
 <br/>
 
