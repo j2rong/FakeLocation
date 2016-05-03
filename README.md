@@ -2,21 +2,22 @@
 
 - English description please refer to [here](https://github.com/j2rong/FakeLocation#english).
 - 这是一个 ***Xposed*** 模块，用于模拟地理位置，世界在手天下我有。
+- 无需模拟位置权限
 
 <br/>
 
 ## 屏幕截图 (Screenshots)
 
 <p align="center">
-<img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/settings_0_1_44.png" width="216"></a>
-<img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/per_app_settings_0_1_44.png" width="216"></a>
+<img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/settings_0_1_44.png" width="240"></a>
+<img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/per_app_settings_0_1_44.png" width="240"></a>
 </p>
 <br/>
 
 ## 更新日志 (Changelogs)
 
 - **0.1.44**
-  - 无需模拟位置权限
+  - 初始版本
 
 <br/>
 
@@ -47,7 +48,9 @@
 
 ## English
 
-- This is an ***Xposed*** module for faking locations per app.
+- This is an ***Xposed*** module for faking locations per app
+
+- No need to turn on "Mock locations"
 
 - **Problems**
 
@@ -59,4 +62,4 @@
 
   - **0.1.44**
 
-    No need to turn on "Mock locations"
+    First release
