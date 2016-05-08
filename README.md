@@ -17,8 +17,9 @@
 
 ## 更新日志 (Changelogs)
 
-- **0.3.73**
+- **0.3.78**
   - 新增基站模拟
+  - 新增繁体中文 (iamernie8199)
 
 - **0.2.48**
   - 添加对4.4系统的支持
@@ -67,8 +68,9 @@
 
 - **Changelogs**
 
-  - **0.3.73**
-    Add cell location mocking
+  - **0.3.78**
+    Add cell location mocking    
+	Add Tradictional Chinese translation (iamernie8199)
 
   - **0.2.48**
     Add support for Android 4.4
