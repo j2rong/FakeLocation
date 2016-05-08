@@ -19,7 +19,7 @@
 
 - **0.3.78**
   - 新增基站模拟
-  - 新增繁体中文 (iamernie8199)
+  - 新增繁体中文 (thanks to iamernie8199)
 
 - **0.2.48**
   - 添加对4.4系统的支持
@@ -70,7 +70,7 @@
 
   - **0.3.78**
     Add cell location mocking    
-	Add Tradictional Chinese translation (iamernie8199)
+	Add Tradictional Chinese translation (thanks to iamernie8199)
 
   - **0.2.48**
     Add support for Android 4.4
