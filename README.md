@@ -12,6 +12,8 @@
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/main_0_1_44.png" width="216"></a>
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/settings_0_1_44.png" width="216"></a>
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/per_app_settings_0_3_73.png" width="216"></a>
+</p>
+<p align="center">
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/map_select_amap_0_7_300.png" width="216"></a>
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/shortcut_list_0_7_300.png" width="216"></a>
 </p>
