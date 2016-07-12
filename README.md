@@ -12,10 +12,22 @@
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/main_0_1_44.png" width="216"></a>
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/settings_0_1_44.png" width="216"></a>
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/per_app_settings_0_3_73.png" width="216"></a>
+<img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/map_select_amap_0_7_300.png" width="216"></a>
+<img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/shortcut_list_0_7_300.png" width="216"></a>
 </p>
 <br/>
 
 ## 更新日志 (Changelogs)
+
+- **0.7.300**
+  - 自定义GPS状态     
+  - 新增地图选择     
+  - 地图选择历史（最近列表）     
+  - 修复一些错误     
+  - 开启“即时更新”后，地图点击、选择（点击）标记、使用最近列表中的地点将直接写入设置中，无需返回应用列表。    
+
+- **0.7.291**
+  - 测试版本
 
 - **0.6.195**
   - 支持Android 4.3    
@@ -88,6 +100,16 @@
 
 
 - **Changelogs**
+
+  - **0.7.300**     
+    Custom GPS status support     
+    Select GPS coordinates from map (play service 7.0.0+ is required)     
+    Map select history (recent list)     
+    Bug fixes     
+    When "Instant Update" enabled, location settings made by map click, marker click, recent list selection will be saved immediately without going back to app list.         
+
+  - **0.7.291**     
+    Internal release     
 
   - **0.6.195**     
     Support Android 4.3     
