@@ -21,6 +21,10 @@
 
 ## 更新日志 (Changelogs)
 
+- **0.7.306**
+  - 修复点击应用列表闪退的错误     
+  - 修复加载应用列表可能导致的OOM错误     
+
 - **0.7.300**
   - 自定义GPS状态     
   - 新增地图选择     
@@ -102,6 +106,10 @@
 
 
 - **Changelogs**
+
+  - **0.7.306**     
+    Fix a crash when selecting app from the list     
+	Fix an OOM crash when loading a long list of apps     
 
   - **0.7.300**     
     Custom GPS status support     
