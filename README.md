@@ -2,7 +2,7 @@
 
 - English description please refer to [here](https://github.com/j2rong/FakeLocation#english).
 - 这是一个 ***Xposed*** 模块，用于模拟地理位置，世界在手天下我有。
-- 无广告、无需模拟位置权限
+- 无需模拟位置权限
 
 <br/>
 
@@ -19,53 +19,8 @@
 </p>
 <br/>
 
-## 更新日志 (Changelogs)
-
-- **0.7.306**
-  - 修复点击应用列表闪退的错误     
-  - 修复加载应用列表可能导致的OOM错误     
-
-- **0.7.300**
-  - 自定义GPS状态     
-  - 新增地图选择     
-  - 地图选择历史（最近列表）     
-  - 修复一些错误     
-  - 开启“即时更新”后，地图点击、选择（点击）标记、使用最近列表中的地点将直接写入设置中，无需返回应用列表。    
-
-- **0.7.291**
-  - 测试版本
-
-- **0.6.195**
-  - 支持Android 4.3    
-  - 基站模拟增强    
-  - 完善部分函数的处理逻辑    
-  - 新增对Google Play services Location API的支持    
-  - 新增对腾讯定位SDK的支持    
-
-- **0.5.161**
-  - 新增模板    
-  - 坐标偏移修正    
-  - 基站模拟增强    
-  - 修复一个可能导致崩溃的错误    
-  - 修复部分设置不能生效的错误    
-  - 新增的WRITE_EXTERNAL_STORAGE权限用于记录崩溃日志    
-  
-- **0.4.127**
-  - 新增应用搜索    
-  - 新增快速设置（最近列表）    
-  - 修复一些错误    
-  - 一些性能优化    
-
-- **0.3.78**
-  - 新增基站模拟
-  - 新增繁体中文 (thanks to iamernie8199)
-
-- **0.2.48**
-  - 添加对4.4系统的支持
-
-- **0.1.44**
-  - 初始版本
-
+## 更新日志
+- [**CHANGELOG**](https://github.com/j2rong/FakeLocation/blob/master/CHANGELOG.md)
 <br/>
 
 ## 问题
@@ -97,57 +52,11 @@
 
 - This is an ***Xposed*** module for mocking locations per app
 
-- No Ads, No need to turn on "Mock locations"
+- No need to turn on "Mock locations" permission
 
 - **Problems**
 
   Feel free to [open an issue](https://github.com/j2rong/FakeLocation/issues/new) if there is any problem or suggestion.      
   If fake location don't work, you can turn on the logs and submit (you can find it in Xposed Installer) to help identify the issue.
 
-
-- **Changelogs**
-
-  - **0.7.306**     
-    Fix a crash when selecting app from the list     
-	Fix an OOM crash when loading a long list of apps     
-
-  - **0.7.300**     
-    Custom GPS status support     
-    Select GPS coordinates from map (play service 7.0.0+ is required)     
-    Map select history (recent list)     
-    Bug fixes     
-    When "Instant Update" enabled, location settings made by map click, marker click, recent list selection will be saved immediately without going back to app list.         
-
-  - **0.7.291**     
-    Internal release     
-
-  - **0.6.195**     
-    Support Android 4.3     
-    Enhance cell location mocking     
-    Improve the handling logic of several functions     
-    Add support for the Location API of Google Play services     
-    Add support for the Tencent Location SDK     
-
-  - **0.5.161**    
-    Add template settings     
-	Offset correction (coordinates in China)     
-	Enhance cell location mocking    
-	Fix a bug that may cause FC    
-	Fix a bug that new settings won't take effect    
-	New permission WRITE_EXTERNAL_STORAGE is used for saving crash logs    
-
-  - **0.4.127**    
-    Add app search    
-    Add setting shortcut (recent list)    
-    Bug fixes    
-    Performance optimizations    
-
-  - **0.3.78**    
-    Add cell location mocking     
-    Add Tradictional Chinese translation (thanks to iamernie8199)    
-
-  - **0.2.48**    
-    Add support for Android 4.4    
-
-  - **0.1.44**    
-    First release    
+- [**Changelogs**](https://github.com/j2rong/FakeLocation/blob/master/CHANGELOG.md)
