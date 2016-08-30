@@ -1,5 +1,25 @@
 # 更新日志 (Changelogs)
 
+## 0.9.486
+- 新增自我隐藏
+- 应用列表根据应用是否启用模拟排序
+- GMS支持使用新的实现（现在无需单独设置com.google.android.gms，直接设置对应APP即可）
+- 修复可能跳转回真实地址的错误
+- 兼容跳转至Material Xposed Installer模块设置页面
+- 更新帮助内容
+- 更新间隔设置
+- 修复错误
+
+- Hide module from selected app(s)
+- Sort apps list by mocking status and settings
+- New approach for GMS support (Make the gps settings in App's per-app settings page, no longer need to set com.google.android.gms separately)
+- Fix location jumping back to real location
+- Fix a problem with Material Xposed Installer
+- Update help
+- Settings for update interval
+- Bug fixes
+
+
 ## 0.8.400
 - 现在无需打开GPS即可实时模拟新的位置
 - 优化捐赠方式
@@ -13,7 +33,7 @@
 <br/>
 - Now you don't even need to turn on GPS to update new mocking location
 - Optimize donation 
-- Add joystick floating window, mocking location will be updated according to the bearing and strength. To use it, go to the app setting page and click "Connect" first.
+- Add joystick overlay, mocking location will be updated according to the bearing and strength. To use it, go to the app setting page and click "Connect" first.
 - Add preferred map setting
 - Fix a bug that the module keeps saying that it's not active even it was enabled in Xposed Installer on some devices
 - Fix a crash cause by clicking search when the list is still loading
