@@ -1,5 +1,25 @@
 # 更新日志 (Changelogs)
 
+## 1.0.561
+- 完善对Gps状态的处理
+- 悬浮窗及应用设置页新增“更新”按钮，单独使用GPS时应用出现“正在定位”、“无法定位”等可尝试点击
+- 改进内存不足时悬浮窗服务可能被系统关闭的问题
+<br/>
+- Improve Gps status handling
+- Add a "Notify" button (overlay and per-app settings), try it when you use GPS Mocking alone and get "Locating", "Unable to locate", etc.
+- Improve that overlay may be killed by the system when low on memory
+
+
+## 1.0.527
+- 新增`模板`-`当前基站信息`
+- 修复错误
+- 易用性改进     
+<br/>
+- Add `Template` - `Current Cell Info`
+- Bug fixes
+- Improve usability
+
+
 ## 0.9.486
 - 新增自我隐藏
 - 应用列表根据应用是否启用模拟排序
@@ -8,8 +28,8 @@
 - 兼容跳转至Material Xposed Installer模块设置页面
 - 更新帮助内容
 - 更新间隔设置
-- 修复错误
-
+- 修复错误     
+<br/>
 - Hide module from selected app(s)
 - Sort apps list by mocking status and settings
 - New approach for GMS support (Make the gps settings in App's per-app settings page, no longer need to set com.google.android.gms separately)
