@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <declare-styleable name="MapSearchBar">
+        <!-- elevation -->
+        <attr name="ms_elevation" format="dimension"/>
+
+        <attr name="ms_margin" format="dimension"/>
+
+        <attr name="ms_backgroundColor" format="color"/>
+        <attr name="ms_iconTintColor" format="color"/>
+        <attr name="ms_highlightColor" format="color"/>
+
+        <attr name="ms_mapType" format="enum">
+            <enum name="map_auto_nav" value="0"/>
+            <enum name="map_google" value="1"/>
+        </attr>
+
+        <attr name="ms_searchHint" format="string"/>
+        <attr name="ms_defaultHistoryEmptyString" format="string"/>
+
+    </declare-styleable>
+
+
+    <!-- HighlightTextView -->
+    <declare-styleable name="HighlightTextView">
+        <attr name="htv_textHighlightColor" format="color"/>
+        <attr name="htv_textHighlightBackgroundColor" format="color"/>
+        <attr name="htv_caseSensitive" format="boolean"/>
+        <attr name="htv_highlightAllOccurrences" format="boolean"/>
+        <attr name="htv_highlightTextBold" format="boolean" />
+    </declare-styleable>
+    
+</resources>

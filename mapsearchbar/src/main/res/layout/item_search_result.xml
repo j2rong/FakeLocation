@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/result_item"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="?attr/selectableItemBackground"
+              android:clickable="true"
+              android:paddingTop="3dp"
+              android:paddingBottom="3dp"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_history_white_24dp"
+        android:tint="@color/ms_default_icon_tint"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.rong.library.widget.HighlightTextView
+            android:id="@+id/txt_1st"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="16sp"
+            app:htv_highlightAllOccurrences="false"
+            app:htv_textHighlightColor="@color/ms_default_text_highlight_color"
+            app:htv_highlightTextBold="true"
+            tools:text="English 中文"/>
+
+        <com.rong.library.widget.HighlightTextView
+            android:id="@+id/txt_2nd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp"
+            android:textColor="@color/ms_material_grey_600"
+            app:htv_highlightAllOccurrences="false"
+            app:htv_textHighlightColor="@color/ms_default_text_highlight_color"
+            app:htv_highlightTextBold="true"
+            tools:text="Detail message"/>
+
+    </LinearLayout>
+
+</LinearLayout>

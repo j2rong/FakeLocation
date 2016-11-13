@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ms_default_search_bar_background">#E6FFFFFF</color>
+    <color name="ms_default_icon_tint">@color/ms_material_grey_600</color>
+    <color name="ms_default_text_highlight_color">#9C27B0</color>
+
+    <color name="ms_material_grey_300">#ffe0e0e0</color>
+    <color name="ms_material_grey_600">#ff757575</color>
+
+</resources>
