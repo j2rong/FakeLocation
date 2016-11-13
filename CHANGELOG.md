@@ -1,5 +1,21 @@
 # 更新日志 (Changelogs)
 
+## 1.1.646
+- 地图添加搜索支持
+- 完善当前基站信息获取
+- 帮助中的页面链接现在使用浏览器打开
+- 打开地图默认定位到应用之前设置的位置
+- UI细节调整
+- 修复错误
+<br/>
+- Add map search
+- Improve 'Current Cell Info'
+- Links in help now use browser to open
+- Map's initial location default to app's current settings
+- UI adjustments
+- Bug fixes
+
+
 ## 1.0.561
 - 完善对Gps状态的处理
 - 悬浮窗及应用设置页新增“更新”按钮，单独使用GPS时应用出现“正在定位”、“无法定位”等可尝试点击
