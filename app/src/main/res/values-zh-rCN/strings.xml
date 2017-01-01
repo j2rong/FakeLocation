@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">模拟位置</string>
+    <string name="app_description">模拟我的位置</string>
+
+    <string name="title_activity_per_app_settings">位置设置</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="title_activity_donation">捐赠</string>
+    <string name="title_activity_template">模板</string>
+    <string name="title_activity_about">关于</string>
+    <string name="title_activity_map">选择地点</string>
+    <string name="title_activity_map_search_result">\"%1$s\"的搜索结果</string>
+
+
+    <!-- MainActivity -->
+    <string name="main_menu_settings">设置</string>
+    <string name="main_menu_template">模板</string>
+    <string name="main_menu_search">搜索</string>
+    <string name="main_menu_donate">捐赠</string>
+    <string name="main_menu_help">如何使用</string>
+    <string name="main_menu_about">关于</string>
+    <string name="main_menu_toggle_float_view">悬浮窗开启/关闭</string>
+
+    <string name="main_mod_not_active">模块“%1$s”尚未启用！首次使用请先在Xposed Installer中启用并重启。</string>
+    <string name="main_mod_not_active_positive_text">我知道了</string>
+    <string name="main_mod_not_active_unknown">未知版本的Xposed Installer，请手动启用</string>
+
+    <string name="main_mod_service_not_compatible">本次更新中的部分新功能需要重启才能正常使用。</string>
+    <string name="main_mod_service_not_compatible_positive_text">我知道了</string>
+
+    <string name="main_search_hint">搜索应用名或包名</string>
+    <string name="main_list_hidden_from_app">[隐藏]</string>
+    <string name="main_list_connected_to_overlay">[关联]</string>
+
+
+    <!-- App Crash -->
+    <string name="app_crash_message">很抱歉，%1$s已停止运行，崩溃日志已复制到剪贴板，请尝试重新启动或至GitHub反馈该问题。</string>
+    <string name="app_crash_stacktrace">调用堆栈：</string>
+    <string name="app_crash_log_saved">崩溃日志已保存至%1$s</string>
+    <string name="app_crash_log_not_saved">崩溃日志保存失败，保存日志需开启“写入外部存储 (WRITE_EXTERNAL_STORAGE)”权限</string>
+    <string name="app_crash_positive">确定</string>
+    <string name="app_crash_negative">提交问题</string>
+
+
+    <!-- Tips -->
+    <string name="tips_positive_text">确定</string>
+    <string name="tips_check_never_show_again">不再显示</string>
+    <string name="tips_message_gms">如果要模拟位置的App使用了谷歌服务来获取GPS信息，只需在设置中打开“谷歌服务API支持”并在对应App页面中设置即可，无需在此设置。</string>
+    <string name="tips_title_overlay_usage">悬浮窗</string>
+    <string name="tips_message_overlay_usage">关联一个应用以使悬浮窗正常工作，查看帮助获取更详细说明。（应用设置页面-GPS模拟-关联悬浮窗）</string>
+
+
+    <!-- Permissions -->
+    <string name="permission_rationale">为保证下列功能正常运行：</string>
+    <string name="permission_usage_1st">保存自定义设置及崩溃日志</string>
+    <string name="permission_usage_2nd">显示地图用于选择模拟的位置</string>
+    <string name="permission_usage_overlay">显示悬浮窗</string>
+    <string name="permission_rationale_ending">应用需要获取 %1$s、%2$s 和 %3$s 权限</string>
+    <string name="permission_rationale_ending_overlay">在部分ROM上应用需要获取 %1$s 权限</string>
+    <string name="permission_1st">写入外部存储 (WRITE_EXTERNAL_STORAGE)</string>
+    <string name="permission_2nd">读取手机状态 (READ_PHONE_STATE)</string>
+    <string name="permission_3rd">获取粗略位置 (ACCESS_COARSE_LOCATION)</string>
+    <string name="permission_overlay">显示系统窗口 (SYSTEM_ALERT_WINDOW)</string>
+
+    <string name="permission_later">以后再说</string>
+    <string name="permission_to_set">去设置</string>
+    <string name="permission_allow">允许</string>
+    <string name="permission_deny">拒绝</string>
+    <string name="permission_ok">我知道了</string>
+
+
+    <!-- MapActivity -->
+    <string name="map_search_hint">搜索地点</string>
+    <string name="map_menu_history_title">历史记录</string>
+    <string name="map_menu_get_lucky_title">手气不错</string>
+    <string name="map_menu_switch_title">切换地图</string>
+
+    <string name="map_selected_a_location">选择了 (%1$.6f, %2$.6f)</string>
+    <string name="map_query_coordinate_null">坐标获取失败</string>
+    <string name="map_marker_title">当前位置</string>
+    <string name="map_history_address_retrieving">正在获取地址…</string>
+    <string name="map_history_dialog_title">选择地点</string>
+    <string name="map_history_list_empty">(空)</string>
+
+
+    <!-- MapSearchResultActivity -->
+    <string name="map_search_result_list_empty">没有找到与“%1$s”相关的地点</string>
+    <string name="map_search_result_loading_text">正在搜索</string>
+    <string name="map_search_result_retry">重试</string>
+    <string name="map_search_result_more">正在加载</string>
+    <string name="map_search_result_no_coordinate">无法获取该地址对应坐标</string>
+
+
+    <!-- PerAppSettingsActivity -->
+    <string name="per_app_menu_recent">最近</string>
+    <string name="per_app_menu_template">模板</string>
+    <string name="per_app_package_name_is_empty">应用包名称获取失败，请重试！</string>
+    <string name="per_app_help_ok">我知道了</string>
+    <string name="per_app_fake_location_service_not_ready">模块已更新，该功能需重启后才能使用。</string>
+    <string name="per_app_settings_saved">设置已保存</string>
+    <string name="per_app_notify_ok">已更新</string>
+    <string name="per_app_notify_error">发生错误：%1$s</string>
+
+    <string name="per_app_hide_from_app">对该应用隐藏本模块</string>
+
+    <string name="per_app_gps_switch">使用GPS模拟</string>
+    <string name="per_app_gps_switch_summary">不同应用的处理逻辑可能不同，如模拟的位置没有更新，使用悬浮窗手动更新</string>
+
+    <string name="per_app_longitude_error">经度范围只能在-180与180之间</string>
+    <string name="per_app_latitude_error">纬度范围只能在-90与90之间</string>
+    <string name="per_app_latitude_str">纬度</string>
+    <string name="per_app_longitude_str">经度</string>
+
+    <string name="per_app_btn_select">选择</string>
+    <string name="per_app_btn_connect">关联悬浮窗</string>
+    <string name="per_app_btn_disconnect">断开关联</string>
+    <string name="per_app_btn_notify">更新</string>
+
+    <string name="per_app_cell_switch">使用基站信息模拟</string>
+    <string name="per_app_cell_switch_summary">GPS模拟失败时可尝试使用基站模拟</string>
+
+    <string name="per_app_cell_type_title">基站类型</string>
+    <string name="per_app_cell_type_summary">最好与手机类型相同</string>
+
+
+    <!-- Template Activity -->
+    <string name="template_setting_not_save">新的设置尚未被保存，是否保存？</string>
+    <string name="template_setting_not_save_negative">取消</string>
+    <string name="template_setting_not_save_neutral">否</string>
+    <string name="template_setting_not_save_positive">保存</string>
+    <string name="template_setting_saved">设置已保存</string>
+    <string name="template_setting_nothing_changed">设置未被修改</string>
+    <string name="template_setting_discarded">设置未保存</string>
+
+
+    <!-- Shortcut bottom sheet dialog -->
+    <string name="shortcut_dialog_title">快速填充</string>
+    <string name="shortcut_title_use_template">模板</string>
+    <string name="shortcut_title_use_history">最近</string>
+    <string name="shortcut_history_no_setting">（未设置）</string>
+    <string name="shortcut_history_no_cell_type">（未知）</string>
+    <string name="shortcut_recent_list_empty">（空）</string>
+
+    <string name="shortcut_template_current_cell_title">当前基站信息</string>
+    <string name="shortcut_template_current_cell_description">使用手机当前所连接的基站的信息</string>
+    <string name="shortcut_template_current_cell_error">自动获取基站信息失败 :(</string>
+    <string name="shortcut_template_gps_title">GPS模板</string>
+    <string name="shortcut_template_cell_title">基站模板</string>
+    <string name="shortcut_template_not_set">（无）</string>
+    <string name="shortcut_template_cell_type_title">类型</string>
+
+
+    <!-- Settings -->
+    <!-- General settings -->
+    <string name="settings_category_title_general">通用</string>
+
+    <string name="settings_pref_title_show_system_app">系统应用</string>
+    <string name="settings_summary_on_show_system_app">显示</string>
+    <string name="settings_summary_off_show_system_app">不显示</string>
+
+    <string name="settings_pref_title_sort_status">应用列表排序</string>
+    <string name="settings_summary_on_sort_status">根据应用设置及模拟状态排序（更耗时）</string>
+    <string name="settings_summary_off_sort_status">默认</string>
+
+    <!-- Map -->
+    <string name="settings_category_title_map">地图</string>
+
+    <string name="settings_pref_title_default_map_type">首选地图类型</string>
+
+    <string name="settings_preferred_map_type_default">自动（默认）</string>
+    <string name="settings_preferred_map_type_a_map">高德地图</string>
+    <string name="settings_preferred_map_type_google_map">谷歌地图</string>
+
+    <string name="settings_pref_title_google_map_search_area">搜索范围（谷歌地图）</string>
+
+    <string name="settings_google_map_search_area_default">只搜索本地区</string>
+    <string name="settings_google_map_search_area_global">全球</string>
+
+
+    <!-- Locate -->
+    <string name="settings_category_title_locate">定位</string>
+
+    <string name="settings_pref_title_fix_offset_in_china">修正地图偏移</string>
+    <string name="settings_summary_on_fix_offset_in_china">对中国地区坐标进行偏移修正，当定位失败、位置偏移时可尝试打开此项</string>
+    <string name="settings_summary_off_fix_offset_in_china">不修正</string>
+
+    <string name="settings_pref_title_gms_hook">谷歌服务API支持</string>
+
+
+    <!-- Feedback -->
+    <string name="settings_category_title_feedback">反馈</string>
+
+    <string name="settings_pref_title_enable_log">输出日志</string>
+    <string name="settings_summary_on_enable_log">开启</string>
+    <string name="settings_summary_off_enable_log">提交问题前请先开启日志输出，并尝试重现该问题！</string>
+
+    <string name="settings_pref_title_open_issue">提交问题</string>
+    <string name="settings_summary_open_issue">请尽可能详细的描述该问题，并将Xposed Installer中的日志一起提交</string>
+
+
+    <!-- Advanced settings -->
+    <string name="settings_category_title_advanced">高级</string>
+
+    <string name="settings_screen_title_advanced">高级设置</string>
+    <string name="settings_summary_advanced_settings">如果你不能完全确定所进行的操作，建议不要更改这些设置，因为这可能会导致未知错误。</string>
+
+    <string name="settings_category_title_gps_status">GPS状态</string>
+    <string name="settings_message_gps_status">默认为空，数字以逗号分隔</string>
+
+    <string name="settings_pref_title_snrs">信噪比</string>
+    <string name="settings_pref_title_elevations">卫星高度</string>
+    <string name="settings_pref_title_azimuths">卫星方位角</string>
+
+
+    <!-- Experimental -->
+    <string name="settings_category_title_experimental">实验性功能</string>
+    <string name="settings_experimental_summary_on">开启（需重启）</string>
+    <string name="settings_experimental_summary_off">关闭（需重启）</string>
+
+    <string name="settings_pref_title_tls_hook">Tencent Location SDK 支持</string>
+
+
+    <!-- Overlay View settings -->
+    <string name="settings_category_title_floating_view">悬浮窗</string>
+
+    <string name="settings_screen_title_floating_view">悬浮窗设置</string>
+    <string name="settings_summary_floating_view_settings">相关设置</string>
+
+    <string name="settings_category_title_fv_service">服务</string>
+
+    <string name="settings_pref_title_auto_stop_service">自动停止</string>
+    <string name="settings_summary_on_auto_stop_service">当主页面关闭时，如果悬浮窗未显示，停止后台服务</string>
+    <string name="settings_summary_off_auto_stop_service">不自动停止</string>
+
+    <string name="settings_pref_title_foreground_service">前台服务</string>
+    <string name="settings_summary_foreground_service">启用以避免内存不足时系统自动停止服务</string>
+
+
+    <string name="settings_category_title_fv_behavior">行为</string>
+
+    <string name="settings_pref_title_switch_back_interval">切换间隔</string>
+    <string name="settings_pref_message_switch_back_interval">在设置的时间内无操作时关闭摇杆返回小窗口（毫秒）</string>
+
+    <string name="settings_pref_title_remember_last_pos">记住上次位置</string>
+    <string name="settings_summary_on_remember_last_pos">悬浮窗将在上次关闭时的位置显示</string>
+    <string name="settings_summary_off_remember_last_pos">悬浮窗将在默认位置显示</string>
+
+    <string name="settings_category_title_controls">控制参数</string>
+
+    <string name="settings_pref_title_update_interval">GPS坐标更新速度</string>
+    <string name="settings_pref_dialog_title_update_interval">更新间隔（毫秒）</string>
+    <string name="settings_pref_message_update_interval">GPS坐标将根据摇杆所确定的方向和强度进行更新。
+        该值设置过小可能会影响设备性能，且如果设置的间隔小于关联应用所请求的位置更新间隔，新位置可能不被应用使用。</string>
+
+    <string name="settings_pref_title_min_speed">最小移动速度</string>
+    <string name="settings_pref_message_min_speed">摇杆强度值为0时使用该值（米/秒）</string>
+
+    <string name="settings_pref_title_max_speed">最大移动速度</string>
+    <string name="settings_pref_message_max_speed">摇杆强度最大时使用该值（米/秒）</string>
+
+
+    <!-- Widget -->
+    <string name="widget_preference_array_edit_format_error">格式错误，多个数字请用逗号分隔</string>
+    <string name="widget_preference_array_edit_default">（默认）</string>
+    <string name="widget_preference_time_edit_summary">%1$d 毫秒</string>
+    <string name="widget_preference_time_edit_less_than_min">不能为空或小于%1$d</string>
+    <string name="widget_preference_time_edit_should_mod_100">该数字必须是100的整数倍</string>
+    <string name="widget_preference_speed_edit_error_empty">速度值不能为空</string>
+    <string name="widget_preference_speed_edit_error_format">格式错误，必须为一个数值</string>
+
+
+    <!-- Overlay -->
+    <string name="overlay_btn_start_stop">开始/停止更新</string>
+    <string name="overlay_btn_notify_once">更新一次</string>
+
+
+    <!-- About -->
+    <string name="about_open_source_projects">开源项目</string>
+    <string name="about_translation">翻译</string>
+    <string name="about_other_modules">其他模块</string>
+    <string name="about_heads_off_description">禁用悬挂式(Heads-up)通知</string>
+
+    <string name="about_donation">如果喜欢，点击此处%1$s支持</string>
+    <string name="about_donation_link_text">捐赠</string>
+
+
+    <!-- SettingsActivity -->
+    <string name="settings_warn_sys_app_title">请注意</string>
+    <string name="settings_warn_sys_app_msg">修改系统应用的位置设置可能会导致未知错误！</string>
+    <string name="settings_warn_sys_app_ok">我知道了</string>
+    <string name="settings_warn_sys_app_do_not_show_again">不再提醒</string>
+
+
+    <!-- License -->
+    <string name="main_license_check_msg">测试版本仅支持设置最多8个应用</string>
+    <string name="main_license_check_failed_ok">好的</string>
+    <string name="main_license_check_failed_cancel">取消</string>
+
+
+
+
+</resources>

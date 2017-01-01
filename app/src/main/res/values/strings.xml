@@ -1,0 +1,303 @@
+<resources>
+    <string name="app_name">FakeLocation</string>
+    <string name="app_description">Mock current location</string>
+    
+
+    <string name="title_activity_per_app_settings">Location Settings</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_donation">Donate</string>
+    <string name="title_activity_template">Template</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_map">Select a location</string>
+    <string name="title_activity_map_search_result">Results for \"%1$s\"</string>
+
+    <!-- App Crash -->
+    <string name="app_crash_message">Unfortunately, %1$s has stopped, crash log has been copied to the clipboard. Please try to restart the app or open an issue on GitHub.</string>
+    <string name="app_crash_stacktrace">Stacktrace:</string>
+    <string name="app_crash_log_saved">Crash log has been saved to %1$s</string>
+    <string name="app_crash_log_not_saved">Failed to save the crash log, it requires \"Write External Storage\" permission.</string>
+    <string name="app_crash_positive">OK</string>
+    <string name="app_crash_negative">Open Issue</string>
+    
+
+    <!-- MainActivity -->
+    <string name="main_menu_settings">Settings</string>
+    <string name="main_menu_template">Template</string>
+    <string name="main_menu_search">Search</string>
+    <string name="main_menu_donate">Donate</string>
+    <string name="main_menu_help">How to Use</string>
+    <string name="main_menu_about">About</string>
+    <string name="main_menu_toggle_float_view">Toggle Overlay</string>
+
+    <string name="main_mod_not_active">%1$s is not active! Please enable it first in Xposed Installer and restart the phone.</string>
+    <string name="main_mod_not_active_positive_text">OK</string>
+    <string name="main_mod_not_active_unknown">Unknown Xposed Installer, please enable it manually.</string>
+
+    <string name="main_mod_service_not_compatible">This update contains some new features that requires a reboot to work properly.</string>
+    <string name="main_mod_service_not_compatible_positive_text">OK</string>
+
+    <string name="main_search_hint">Search app name or package name</string>
+    <string name="main_list_hidden_from_app">[Hidden]</string>
+    <string name="main_list_connected_to_overlay">[Connected]</string>
+	
+
+    <!-- Tips -->
+    <string name="tips_positive_text">OK</string>
+    <string name="tips_check_never_show_again">Never Show Again</string>
+    <string name="tips_message_gms">If the app you want to mock uses Google service to obtain gps locations, you should turn on \'Google service API support\' in Settings and set in app\'s per-app settings page instead of setting here.</string>
+    <string name="tips_title_overlay_usage">Overlay</string>
+    <string name="tips_message_overlay_usage">In order for the overlay to work, you should connect an App to it (Per-app settings page, GPS Mocking, Connect button). See help for more details.</string>
+
+	
+    <!-- Permissions -->
+    <string name="permission_rationale">In order for the following features to work properly:</string>
+    <string name="permission_usage_1st">Save crash log and user settings</string>
+    <string name="permission_usage_2nd">Display map for location selection</string>
+    <string name="permission_usage_overlay">Display overlay</string>
+    <string name="permission_rationale_ending">Permissions %1$s, %2$s and %3$s are needed.</string>
+    <string name="permission_rationale_ending_overlay">Permission %1$s is needed on some ROMs.</string>
+    <string name="permission_1st">WRITE_EXTERNAL_STORAGE</string>
+    <string name="permission_2nd">READ_PHONE_STATE</string>
+    <string name="permission_3rd">ACCESS_COARSE_LOCATION</string>
+    <string name="permission_overlay">SYSTEM_ALERT_WINDOW</string>
+
+    <string name="permission_later">Later</string>
+    <string name="permission_to_set">To Set</string>
+    <string name="permission_allow">Allow</string>
+    <string name="permission_deny">Deny</string>
+    <string name="permission_ok">GOT IT</string>
+
+	
+    <!-- MapActivity -->
+    <string name="map_search_hint">Search places</string>
+    <string name="map_menu_history_title">History</string>
+    <string name="map_menu_get_lucky_title">Feeling Lucky</string>
+    <string name="map_menu_switch_title">Switch Map</string>
+
+    <string name="map_selected_a_location">Location (%1$.6f, %2$.6f) selected</string>
+    <string name="map_query_coordinate_null">Failed to get coordinate</string>
+    <string name="map_marker_title">Current location</string>
+    <string name="map_history_address_retrieving">Retrieving address…</string>
+    <string name="map_history_dialog_title">Select a location</string>
+    <string name="map_history_list_empty">(Empty)</string>
+
+	
+    <!-- MapSearchResultActivity -->
+    <string name="map_search_result_list_empty">No results found for \"%1$s\"</string>
+    <string name="map_search_result_loading_text">Searching</string>
+    <string name="map_search_result_retry">Retry</string>
+    <string name="map_search_result_more">Loading more</string>
+    <string name="map_search_result_no_coordinate">No coordinate found for this address</string>
+
+	
+    <!-- PerAppSettingsActivity -->
+    <string name="per_app_menu_recent">Recent</string>
+    <string name="per_app_menu_template">Templates</string>
+    <string name="per_app_package_name_is_empty">Failed to get package name, please try again!</string>
+    <string name="per_app_help_ok">GOT IT</string>
+    <string name="per_app_fake_location_service_not_ready">This feature requires a reboot to work since the module has been updated</string>
+    <string name="per_app_settings_saved">Settings saved</string>
+    <string name="per_app_notify_ok">Updated</string>
+    <string name="per_app_notify_error">Error occurred: %1$s</string>
+
+    <string name="per_app_hide_from_app">Hide Module from the App</string>
+
+    <!-- GPS -->
+    <string name="per_app_gps_switch">GPS Mocking</string>
+    <string name="per_app_gps_switch_summary">App\'s location handling may be different. If the location is not updated, use overlay to notify it manually</string>
+
+    <string name="per_app_latitude_str">Latitude</string>
+    <string name="per_app_longitude_str">Longitude</string>
+    <string name="per_app_longitude_error">Longitude should be greater than -180 and less than 180</string>
+    <string name="per_app_latitude_error">Latitude should be greater than -90 and less than 90</string>
+
+    <string name="per_app_btn_select">Select</string>
+    <string name="per_app_btn_connect">Connect</string>
+    <string name="per_app_btn_disconnect">Disconnect</string>
+    <string name="per_app_btn_notify">Notify</string>
+
+
+    <!-- Cell info -->
+    <string name="per_app_cell_switch">Cell info Mocking</string>
+    <string name="per_app_cell_switch_summary">Try use cell info if GPS failed</string>
+
+    <string name="per_app_cell_type_title">Cell type</string>
+    <string name="per_app_cell_type_summary">preferably the same as phone type</string>
+
+
+    <!-- Template Activity -->
+    <string name="template_setting_not_save">Settings have been changed, do you want to save it first?</string>
+    <string name="template_setting_not_save_negative">Cancel</string>
+    <string name="template_setting_not_save_neutral">Discard</string>
+    <string name="template_setting_not_save_positive">Save</string>
+    <string name="template_setting_saved">Settings saved</string>
+    <string name="template_setting_nothing_changed">No settings changed</string>
+    <string name="template_setting_discarded">Settings discarded</string>
+
+
+    <!-- Shortcut BottomSheet Dialog -->
+    <string name="shortcut_dialog_title">Shortcut</string>
+    <string name="shortcut_title_use_template">Template</string>
+    <string name="shortcut_title_use_history">Recent</string>
+    <string name="shortcut_history_no_setting">(Not set)</string>
+    <string name="shortcut_history_no_cell_type">(Unknown)</string>
+    <string name="shortcut_recent_list_empty">(Empty)</string>
+
+    <string name="shortcut_template_current_cell_title">Current Cell Info</string>
+    <string name="shortcut_template_current_cell_description">The phone currently using</string>
+    <string name="shortcut_template_current_cell_error">Cannot retrieve current cell info automatically :(</string>
+    <string name="shortcut_template_gps_title">GPS Template</string>
+    <string name="shortcut_template_cell_title">Cell Template</string>
+    <string name="shortcut_template_not_set">(Null)</string>
+    <string name="shortcut_template_cell_type_title">Type</string>
+
+
+    <!-- Settings -->
+    <!-- General settings -->
+    <string name="settings_category_title_general">General</string>
+
+    <string name="settings_pref_title_show_system_app">System apps</string>
+    <string name="settings_summary_on_show_system_app">Show</string>
+    <string name="settings_summary_off_show_system_app">Don\'t show</string>
+
+    <string name="settings_pref_title_sort_status">App list sorting</string>
+    <string name="settings_summary_on_sort_status">Sort according to app\'s mocking status and settings (more time-consuming)</string>
+    <string name="settings_summary_off_sort_status">Default</string>
+
+    <!-- Map settings -->
+    <string name="settings_category_title_map">Map</string>
+
+    <string name="settings_pref_title_default_map_type">Preferred map type</string>
+
+    <string name="settings_preferred_map_type_default">Auto (Default)</string>
+    <string name="settings_preferred_map_type_a_map">AutoNavi Map</string>
+    <string name="settings_preferred_map_type_google_map">Google Map</string>
+
+    <string name="settings_pref_title_google_map_search_area">Search area (Google Map)</string>
+
+    <string name="settings_google_map_search_area_default">Only current locale</string>
+    <string name="settings_google_map_search_area_global">Global</string>
+
+
+    <!-- Locate settings -->
+    <string name="settings_category_title_locate">Locate</string>
+
+    <string name="settings_pref_title_fix_offset_in_china">Offset correction</string>
+    <string name="settings_summary_on_fix_offset_in_china">Try to correct offset (only coordinates in China)</string>
+    <string name="settings_summary_off_fix_offset_in_china">Don\'t do anything</string>
+
+    <string name="settings_pref_title_gms_hook">Google Service API support</string>
+
+
+    <!-- Feedback settings -->
+    <string name="settings_category_title_feedback">Feedback</string>
+
+    <string name="settings_pref_title_enable_log">Verbose log</string>
+    <string name="settings_summary_on_enable_log">Enabled</string>
+    <string name="settings_summary_off_enable_log">Before submitting an issue please enable this and try to reproduce the issue！</string>
+
+    <string name="settings_pref_title_open_issue">Issue</string>
+    <string name="settings_summary_open_issue">Please describe the issue as detailed as possible, and submit with the log in Xposed Installer together</string>
+
+
+    <!-- Advanced settings -->
+    <!-- The advanced settings are exclusively for users with advanced knowledge. -->
+    <string name="settings_category_title_advanced">Advanced</string>
+
+    <string name="settings_screen_title_advanced">Advanced settings</string>
+    <string name="settings_summary_advanced_settings">It is not advisable to change these settings if you are not completely sure of what you are doing, as it could cause unexpected behavior.</string>
+
+    <string name="settings_category_title_gps_status">GPS Status</string>
+    <string name="settings_message_gps_status">Default is empty, numbers separated by commas</string>
+
+    <string name="settings_pref_title_snrs">Signal to Noise Ratio</string>
+    <string name="settings_pref_title_elevations">Satellite Elevation</string>
+    <string name="settings_pref_title_azimuths">Satellite Azimuths</string>
+
+
+    <!-- Experimental -->
+    <string name="settings_category_title_experimental">Experimental</string>
+    <string name="settings_experimental_summary_on">Enabled (Reboot required)</string>
+    <string name="settings_experimental_summary_off">Disabled (Reboot required)</string>
+
+    <string name="settings_pref_title_tls_hook">Tencent Location SDK support</string>
+
+
+    <!-- Overlay View settings -->
+    <string name="settings_category_title_floating_view">Overlay</string> <!-- Overlay -->
+
+    <string name="settings_screen_title_floating_view">Overlay settings</string>
+    <string name="settings_summary_floating_view_settings">Related settings</string>
+
+    <string name="settings_category_title_fv_service">Service</string>
+
+    <string name="settings_pref_title_auto_stop_service">Auto stop</string>
+    <string name="settings_summary_on_auto_stop_service">Stop service when closing main page if overlay is not showing</string>
+    <string name="settings_summary_off_auto_stop_service">Do nothing</string>
+
+    <string name="settings_pref_title_foreground_service">Foreground service</string>
+    <string name="settings_summary_foreground_service">If on, the service will unlikely be killed by the system when low on memory.</string>
+
+    <string name="settings_category_title_fv_behavior">Behavior</string>
+
+    <string name="settings_pref_title_switch_back_interval">Switching interval</string>
+    <string name="settings_pref_message_switch_back_interval">Close joystick view when there is no operation during the time interval (ms)</string>
+
+    <string name="settings_pref_title_remember_last_pos">Remember last position</string>
+    <string name="settings_summary_on_remember_last_pos">Overlay view will be shown at last closed position</string>
+    <string name="settings_summary_off_remember_last_pos">Overlay view will be shown at default position</string>
+
+    <string name="settings_category_title_controls">Controls</string>
+
+    <string name="settings_pref_title_update_interval">GPS location update interval</string>
+    <string name="settings_pref_dialog_title_update_interval">Update Interval (ms)</string>
+    <string name="settings_pref_message_update_interval">GPS location will be updated according to the angle and strength selected from the overlay joystick.
+        Device performance may be affected if update interval is too small.
+        Also the update may be discarded by the connected app if the interval is less than the location receiving interval that the app requested.</string>
+
+    <string name="settings_pref_title_min_speed">Minimum moving speed</string>
+    <string name="settings_pref_message_min_speed">The value is used when strength of the overlay joystick is set to 0 (meter/s)</string>
+
+    <string name="settings_pref_title_max_speed">Maximum moving speed</string>
+    <string name="settings_pref_message_max_speed">The value is used when strength of the overlay joystick is set to maximum (meter/s)</string>
+
+
+    <!-- Widget -->
+    <string name="widget_preference_array_edit_format_error">Input error, numbers separated by commas</string>
+    <string name="widget_preference_array_edit_default">(Default)</string>
+    <string name="widget_preference_time_edit_summary">%1$d ms</string>
+    <string name="widget_preference_time_edit_less_than_min">Can not be empty or less than %1$d</string>
+    <string name="widget_preference_time_edit_should_mod_100">The number can only be a integer multiple of 100</string>
+    <string name="widget_preference_speed_edit_error_empty">Speed can not be empty</string>
+    <string name="widget_preference_speed_edit_error_format">Invalid speed value, should be a float number</string>
+
+
+    <!-- Overlay -->
+    <string name="overlay_btn_start_stop">Start/Stop Updates</string>
+    <string name="overlay_btn_notify_once">Notify Once</string>
+
+
+    <!-- AboutActivity -->
+    <string name="about_donation">Find this app useful?\nSupport by %1$s.</string>
+    <string name="about_donation_link_text">making a donation</string>
+
+    <string name="about_other_modules">Other modules</string>
+    <string name="about_heads_off_description">Disable heads-up notifications</string>
+    <string name="about_translation">Translations</string>
+    <string name="about_open_source_projects">Open source projects</string>
+
+
+    <!-- SettingsActivity -->
+    <string name="settings_warn_sys_app_title">Attention</string>
+    <string name="settings_warn_sys_app_msg">Change the location settings of system apps may cause unexpected behavior!</string>
+    <string name="settings_warn_sys_app_ok">GOT IT</string>
+    <string name="settings_warn_sys_app_do_not_show_again">DON\'T SHOW AGAIN</string>
+
+
+    <!-- License -->
+    <string name="main_license_check_msg">Only supports 8 apps in beta version.</string>
+    <string name="main_license_check_failed_ok">OK</string>
+    <string name="main_license_check_failed_cancel">Cancel</string>
+
+
+</resources>
