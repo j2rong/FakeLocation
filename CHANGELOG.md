@@ -1,12 +1,24 @@
 # 更新日志 (Changelogs)
 
+## 1.2
+- 准备对Android 7的支持（部分）
+- 应用设置页恢复“更新”按钮
+- 尝试修复部分GPS定位问题
+- 其他一些改进      
+<br/>
+- Prepare Android 7 support (partial)
+- Add "Notify" button back in `Per-app Settings` page
+- Try to fix some issues regarding to GPS mocking
+- Other improvements
+
+
 ## 1.1.646
 - 地图添加搜索支持
 - 完善当前基站信息获取
 - 帮助中的页面链接现在使用浏览器打开
 - 打开地图默认定位到应用之前设置的位置
 - UI细节调整
-- 修复错误
+- 修复错误      
 <br/>
 - Add map search
 - Improve 'Current Cell Info'
@@ -19,7 +31,7 @@
 ## 1.0.561
 - 完善对Gps状态的处理
 - 悬浮窗及应用设置页新增“更新”按钮，单独使用GPS时应用出现“正在定位”、“无法定位”等可尝试点击
-- 改进内存不足时悬浮窗服务可能被系统关闭的问题
+- 改进内存不足时悬浮窗服务可能被系统关闭的问题      
 <br/>
 - Improve Gps status handling
 - Add a "Notify" button (overlay and per-app settings), try it when you use GPS Mocking alone and get "Locating", "Unable to locate", etc.
@@ -79,7 +91,7 @@
 
 ## 0.7.306
 - 修复点击应用列表闪退的错误
-- 修复加载应用列表可能导致的OOM错误    
+- 修复加载应用列表可能导致的OOM错误     
 <br/>
 - Fix a crash when selecting app from the list     
 - Fix an OOM crash when loading a long list of apps
@@ -108,7 +120,7 @@
 - 基站模拟增强    
 - 完善部分函数的处理逻辑    
 - 新增对Google Play services Location API的支持    
-- 新增对腾讯定位SDK的支持    
+- 新增对腾讯定位SDK的支持     
 <br/>
 - Support Android 4.3     
 - Enhance cell location mocking     
@@ -123,7 +135,7 @@
 - 基站模拟增强    
 - 修复一个可能导致崩溃的错误    
 - 修复部分设置不能生效的错误    
-- 新增的WRITE_EXTERNAL_STORAGE权限用于记录崩溃日志    
+- 新增的WRITE_EXTERNAL_STORAGE权限用于记录崩溃日志     
 <br/>
 - Add template settings     
 - Offset correction (coordinates in China)     
