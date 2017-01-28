@@ -1,4 +1,4 @@
-﻿# 模擬位置 (FakeLocation)
+# 模擬位置 (FakeLocation)
 
 - English description please refer to [here](https://github.com/j2rong/FakeLocation#english).
 - 简体中文描述请参见[此处](https://github.com/j2rong/FakeLocation)
