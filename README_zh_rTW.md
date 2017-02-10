@@ -1,13 +1,13 @@
-# 模拟位置 (FakeLocation)
+# 模擬位置 (FakeLocation)
 
 - English description please refer to [here](https://github.com/j2rong/FakeLocation#english).
-- 繁體中文描述請參照[這裡](https://github.com/j2rong/FakeLocation/blob/master/README_zh_rTW.md)
-- 这是一个 ***Xposed*** 模块，用于模拟地理位置，世界在手天下我有。
-- 无需模拟位置权限
+- 简体中文描述请参见[此处](https://github.com/j2rong/FakeLocation)
+- 這是一個 ***Xposed*** 模組，用於模擬地理位置，世界在手天下我有。
+- 無需模擬位置權限
 
 <br/>
 
-## 屏幕截图 (Screenshots)
+## 螢幕截圖
 
 <p align="center">
 <img src="https://github.com/j2rong/FakeLocation/blob/master/art/screenshots/main_0_1_44.png" width="216"></a>
@@ -20,18 +20,18 @@
 </p>
 <br/>
 
-## 更新日志
+## 更新記錄檔
 - [**CHANGELOG**](https://github.com/j2rong/FakeLocation/blob/master/CHANGELOG.md)
 <br/>
 
-## 问题
+## 問題
 
-- 如使用过程中出现问题或功能建议，请至[此处](https://github.com/j2rong/FakeLocation/issues/new)提交。
-- 如位置设置无效，请在模块中打开日志，并将Xposed Installer中的日志提交至[此处](https://github.com/j2rong/FakeLocation/issues/new)。
+- 若使用過程中出現問題或功能建議，請至[這裡](https://github.com/j2rong/FakeLocation/issues/new)送出。
+- 若位置設定無效，請在模組中啟用記錄檔，並把 Xposed Installer 裡的記錄檔送出至[這裡](https://github.com/j2rong/FakeLocation/issues/new)。
 
 <br/>
 
-## 致谢 (Credits)
+## 參與名單
 
 - [**Xposed Framework**](https://github.com/rovo89/Xposed)
 
@@ -46,18 +46,3 @@
   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.   
   See the License for the specific language governing permissions and   
   limitations under the License.
-
-<br/>
-
-## English
-
-- This is an ***Xposed*** module for mocking locations per app
-
-- No need to turn on "Mock locations" permission
-
-- **Problems**
-
-  Feel free to [open an issue](https://github.com/j2rong/FakeLocation/issues/new) if there is any problem or suggestion.      
-  If fake location don't work, you can turn on the logs and submit (you can find it in Xposed Installer) to help identify the issue.
-
-- [**Changelogs**](https://github.com/j2rong/FakeLocation/blob/master/CHANGELOG.md)
