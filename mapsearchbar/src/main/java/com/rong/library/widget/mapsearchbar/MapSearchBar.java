@@ -141,14 +141,14 @@ public class MapSearchBar extends FrameLayout implements
 	}
 
 	private void findViews() {
-		cardView = (CardView) findViewById(R.id.card);
-		btnMenu = (AppCompatImageView) findViewById(R.id.btn_menu);
-		btnNavigation = (AppCompatImageView) findViewById(R.id.btn_nav);
-		btnHistory = (AppCompatImageView) findViewById(R.id.btn_history);
-		searchEdit = (AppCompatEditText) findViewById(R.id.edit);
-		btnClear = (AppCompatImageView) findViewById(R.id.btn_clear);
-		containerSuggestion = (RelativeLayout) findViewById(R.id.list_container);
-		suggestionRecycler = (RecyclerView) findViewById(R.id.recycler);
+		cardView = findViewById(R.id.card);
+		btnMenu = findViewById(R.id.btn_menu);
+		btnNavigation = findViewById(R.id.btn_nav);
+		btnHistory = findViewById(R.id.btn_history);
+		searchEdit = findViewById(R.id.edit);
+		btnClear = findViewById(R.id.btn_clear);
+		containerSuggestion = findViewById(R.id.list_container);
+		suggestionRecycler = findViewById(R.id.recycler);
 	}
 
 	private void setupViews() {
@@ -186,6 +186,7 @@ public class MapSearchBar extends FrameLayout implements
 	// animation
 	//
 	private int getSuggestionHeight() {
+		// returns pixels
 		int h = (int)(screenHeight * 0.45);
 		return adapter.getSuggestedHeight(suggestionRecycler, h);
 	}
@@ -210,6 +211,7 @@ public class MapSearchBar extends FrameLayout implements
 			}
 		});
 
+		// if (adapter.getItemCount() > 0)
 		animator.start();
 	}
 
@@ -217,15 +219,16 @@ public class MapSearchBar extends FrameLayout implements
 
 	@Override
 	public void onClick(View v) {
-		int id = v.getId();
+		int id = v.getId();	// id == getId()
 
 		if (id == R.id.btn_menu) {
 			if (popupMenu != null) {
 				popupMenu.show();
-				searchEdit.clearFocus();
+				searchEdit.clearFocus();	// clear focus and hide suggestion list
 			}
 		} else if (id == R.id.btn_clear) {
-			searchEdit.setText("");
+			searchEdit.setText("");			// auto trigger onTextChanged
+			//searchEdit.requestFocus();		// hide
 		} else if (id == R.id.btn_nav) {
 			if (mListener != null)
 				mListener.onNavigationClick(btnNavigation);
@@ -242,8 +245,10 @@ public class MapSearchBar extends FrameLayout implements
 	@Override
 	public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
 		if (actionId == EditorInfo.IME_ACTION_SEARCH) {
+
 			String q = searchEdit.getText().toString();
 
+			// clear and hide suggestions
 			searchEdit.setText("");
 			searchEdit.clearFocus();
 
@@ -284,7 +289,7 @@ public class MapSearchBar extends FrameLayout implements
 		InputMethodManager imm = (InputMethodManager) getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
 
 		if (hasFocus) {
-			if (!focusCameFromHistory)
+			if (!focusCameFromHistory && imm != null)
 				imm.showSoftInput(v, InputMethodManager.SHOW_IMPLICIT);
 			focusCameFromHistory = false;
 
@@ -293,7 +298,8 @@ public class MapSearchBar extends FrameLayout implements
 				animateSuggestionList(0, getSuggestionHeight());
 
 		} else {
-			imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+			if (imm != null)
+				imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
 
 			isSearchEditFocused = false;
 			if (suggestionsVisible)
@@ -343,15 +349,13 @@ public class MapSearchBar extends FrameLayout implements
 
 
 	public void inflateMenu(@MenuRes int menuRes) {
-		if (menuRes > 0) {
-			btnMenu.setVisibility(VISIBLE);
-			btnMenu.setOnClickListener(this);
+		btnMenu.setVisibility(VISIBLE);
+		btnMenu.setOnClickListener(this);
 
-			popupMenu = new PopupMenu(getContext(), btnMenu);
-			popupMenu.setOnMenuItemClickListener(this);
-			popupMenu.inflate(menuRes);
-			popupMenu.setGravity(Gravity.END);
-		}
+		popupMenu = new PopupMenu(getContext(), btnMenu);
+		popupMenu.setOnMenuItemClickListener(this);
+		popupMenu.inflate(menuRes);
+		popupMenu.setGravity(Gravity.END);
 	}
 
 	public void setMapSearchActionListener(MapSearchActionListener l) {
@@ -370,7 +374,7 @@ public class MapSearchBar extends FrameLayout implements
 
 	public void stopQueryThread() {
 		if (queryThread != null) {
-			queryThread.interrupt();
+			queryThread.quit();
 			queryThread = null;
 		}
 	}

@@ -34,7 +34,7 @@ import com.rong.library.widget.mapsearchbar.R;
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-public class HighlightTextView extends TextView {
+public class HighlightTextView extends android.support.v7.widget.AppCompatTextView {
 
 	public HighlightTextView(Context context) {
 		super(context);
@@ -51,11 +51,6 @@ public class HighlightTextView extends TextView {
 		init(attrs, defStyle);
 	}
 
-	@TargetApi(Build.VERSION_CODES.LOLLIPOP)
-	public HighlightTextView(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
-		super(context, attrs, defStyleAttr, defStyleRes);
-		init(attrs, defStyleAttr);
-	}
 
 	private int mHighlightTextColor = Color.BLACK;
 	private int mHighlightBackgroundColor = Color.TRANSPARENT;
@@ -74,6 +69,38 @@ public class HighlightTextView extends TextView {
 		mHighlightTextBold = a.getBoolean(R.styleable.HighlightTextView_htv_highlightTextBold, false);
 
 		a.recycle();
+	}
+
+	public void setHighlightTextColor(@ColorInt int color) {
+		this.mHighlightTextColor = color;
+	}
+
+	public int getHighlightTextColor() {
+		return mHighlightTextColor;
+	}
+
+	public void setHighlightBackgroundColor(@ColorInt int color) {
+		this.mHighlightBackgroundColor = color;
+	}
+
+	public int getHighlightBackgroundColor() {
+		return mHighlightBackgroundColor;
+	}
+
+	public boolean isCaseSensitive() {
+		return mCaseSensitive;
+	}
+
+	public void setCaseSensitive(boolean mCaseSensitive) {
+		this.mCaseSensitive = mCaseSensitive;
+	}
+
+	public boolean isHighlightAllOccurrences() {
+		return mHighlightAllOccurrences;
+	}
+
+	public void setHighlightAllOccurrences(boolean mHighlightAllOccurrences) {
+		this.mHighlightAllOccurrences = mHighlightAllOccurrences;
 	}
 
 	public void highlight(String textToHighlight) {

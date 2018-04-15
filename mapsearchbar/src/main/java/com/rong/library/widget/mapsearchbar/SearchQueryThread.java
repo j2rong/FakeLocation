@@ -19,6 +19,8 @@ import java.lang.ref.WeakReference;
  */
 class SearchQueryThread extends Thread {
 
+	private volatile boolean bStopping = false;
+
 	private String cachedQuery = null;
 	private String strQuerying = "";
 	private WeakReference<MapSearchBar.MapSearchActionListener> listener = null;
@@ -35,9 +37,16 @@ class SearchQueryThread extends Thread {
 		}
 	}
 
+	public void quit() {
+		if (!bStopping) {
+			bStopping = true;
+			this.interrupt();
+		}
+	}
+
 	@Override
 	public void run() {
-		while (!interrupted()) {
+		while (!bStopping) {
 			if (strQuerying != null) {
 				if (!strQuerying.equals(cachedQuery)) {
 					cachedQuery = strQuerying;

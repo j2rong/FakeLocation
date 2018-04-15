@@ -42,8 +42,8 @@ class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapter.ViewH
 	private List<SearchResult> mList = null;
 	private String currentQuery;
 
-	private WeakReference<OnSuggestionItemClickListener> mListener = null;
-	private Context mContext = null;
+	private WeakReference<OnSuggestionItemClickListener> mListener;
+	private Context mContext;
 	private View calcView = null;
 
 	private String defEmptyStr;
@@ -126,8 +126,8 @@ class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapter.ViewH
 		if (calcView == null)
 			calcView = LayoutInflater.from(mContext).inflate(R.layout.item_search_result, parent, false);
 
-		HighlightTextView txt1st = (HighlightTextView) calcView.findViewById(R.id.txt_1st);
-		HighlightTextView txt2nd = (HighlightTextView) calcView.findViewById(R.id.txt_2nd);
+		HighlightTextView txt1st = calcView.findViewById(R.id.txt_1st);
+		HighlightTextView txt2nd = calcView.findViewById(R.id.txt_2nd);
 
 		int total = 0;
 
@@ -175,9 +175,9 @@ class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapter.ViewH
 		ViewHolder(View itemView, OnSearchResultItemClickListener l) {
 			super(itemView);
 
-			icon = (AppCompatImageView) itemView.findViewById(R.id.image);
-			txt1st = (HighlightTextView) itemView.findViewById(R.id.txt_1st);
-			txt2nd = (HighlightTextView) itemView.findViewById(R.id.txt_2nd);
+			icon = itemView.findViewById(R.id.image);
+			txt1st = itemView.findViewById(R.id.txt_1st);
+			txt2nd = itemView.findViewById(R.id.txt_2nd);
 
 			listener = new WeakReference<>(l);
 			itemView.setOnClickListener(this);
